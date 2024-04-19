@@ -1,0 +1,55 @@
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes white-to-black {
+    0% {
+        background-color: white;
+        color: black;
+    }
+
+    100% {
+        background-color: black;
+        color: white;
+    }
+}
+
+@keyframes black-to-white {
+      0% {
+        background-color: black;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+.fade-one {
+    animation: fade-up 1s;
+}
+
+.fade-two {
+    animation: fade-up 1.25s;
+}
+
+.fade-three {
+    animation: fade-up 1.5s;
+}
+
+.dark {
+    animation: white-to-black 1s forwards;
+}
+
+.light {
+    animation: black-to-white 1s forwards;
+}
